@@ -50,7 +50,7 @@ job_to_http_content_type = {
 
 class SalesforceBulk(object):
     def __init__(self, sessionId=None, host=None, username=None, password=None,
-                 exception_class=BulkApiError, API_version="39.0", sandbox=False):
+                 exception_class=BulkApiError, API_version="60.0", sandbox=False):
         if not sessionId and not username:
             raise RuntimeError(
                 "Must supply either sessionId/instance_url or username/password")
